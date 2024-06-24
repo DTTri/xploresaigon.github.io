@@ -9,16 +9,24 @@ function App() {
   }
 
   return (
-    <header>
-      <h1>{t('title')}</h1>
-      <nav>
-        <ul>
-          <li><a href="#">{t('nav.explore')}</a></li>
-        </ul>
-      </nav>
-      <button onClick={() => changeLanguage('en')}>English</button>
-      <button onClick={() => changeLanguage('vi')}>Tiếng Việt</button>
-      <h1>Hello</h1>
+    <header className="px-12 py-8 flex justify-between">
+      <a href="">
+        XploreSaigon
+      </a>
+      <div className='flex gap-10'>
+        <div><a href="" className='header-nav'>{t('nav.explore')}</a></div>
+        <div><a href="" className='header-nav'>{t('nav.about')}</a></div>
+      </div>
+      <div className='flex pr-12 gap-4'>
+        <button>
+        <box-icon name='cog' size="md" ></box-icon>
+
+        </button>
+
+        <button>
+        <box-icon name='log-in-circle' size="md"></box-icon>
+        </button>
+      </div>
     </header>
   )
 }
