@@ -1,5 +1,6 @@
 import Header from '../Header';
 import Introduction from './AboutUs/Introduction';
+import Mission from './AboutUs/Mission';
 import Vision from './AboutUs/Vision';
 
 export default function AboutUsPage() {
@@ -8,6 +9,7 @@ export default function AboutUsPage() {
       <Header />
       <Introduction />
       <Vision />
+      <Mission />
     </>
   );
 }
