@@ -5,13 +5,21 @@ export default function Introduction() {
 
   return (
     <>
-      <div className='min-h-screen flex items-center justify-between bg-yellow-100'>
-        <div className='flex flex-col'>
-          <h1 className=''>{t('about-us.introduction.title')}</h1>
-          <p className=''>{t('about-us.introduction.content')}</p>
+      <div className='h-screen max-h-screen flex items-center justify-between flex-wrap overflow-hidden'>
+        <div className='intro--content flex flex-col gap-8 basis-1/2 pl-28'>
+          <h1 className='w-3/5 text-5xl font-bold'>
+            {t('about-us.introduction.title')}
+          </h1>
+          <p className='w-5/6 text-xl font-medium'>
+            {t('about-us.introduction.content')}
+          </p>
         </div>
-        <div className=''>
-          <img src='/images/about-us/poster-1.jpg' alt='Introduction' />
+        <div className='intro--image basis-1/2 flex justify-end'>
+          <img
+            className='max-h-screen rounded-l-poster'
+            src='/images/about-us/poster-1.jpg'
+            alt='Introduction'
+          />
         </div>
       </div>
     </>
