@@ -16,7 +16,7 @@ export default function Introduction() {
         </div>
         <div className='intro--image basis-1/2 flex justify-end'>
           <img
-            className='max-h-screen rounded-l-poster'
+            className='h-screen rounded-l-poster'
             src='/images/about-us/poster-1.jpg'
             alt='Introduction'
           />
