@@ -3,5 +3,23 @@
     "nav":{
         "explore":"Khám phá",
         "about":"Về chúng tôi"
+    },
+    "about-us":{
+        "introduction":{
+            "title":"Khám phá Sài Gòn theo cách của bạn",
+            "content":"Chúng tôi gọi đây là Xplore Saigon -  một website dạng cẩm nang cho du khách trong và ngoài nước có nhu cầu tìm hiểu về du lịch và đi du lịch tại TP. Hồ Chí Minh. Xplore Saigon ra đời năm 2024 với mục tiêu tìm tòi, học hỏi, khám phá, và chia sẻ các kiến thức và trải nghiệm về du lịch. Từ “Explore” - khám phá là một từ phù hợp nhất để miêu tả Website của chúng tôi. Và X - theo cách hiểu của chúng tôi, là một ẩn số, một điều thú vị không được báo trước. Xplore Saigon mang đến cho bạn những điều mới mẻ, những gợi ý về du lịch Sài Gòn, đồng thời tiếp thêm cho bạn động lực để đi và khám phá tất tần tật về thành phố tuyệt vời này. Chúng tôi cung cấp thông tin với chức năng như một quyển cẩm nang, việc của bạn là đi và trải nghiệm từ chính bản thân mình. Điều gì đang chờ đợi bạn trong chuyến đi? Chỉ có bạn mới biết được thôi! Nào, Hãy khám phá Sài Gòn theo cách của bạn."
+
+        },
+        "vision":{
+            "title":"Tầm nhìn",
+            "content":"Không chỉ đơn thuần là một website về quảng bá du lịch, chúng tôi định hướng xây dựng Xplore Saigon thành nơi kết nối con người thông qua việc khám phá và hiểu biết về các nền văn hóa đa dạng. Hơn thế nữa, qua dự án này, chúng tôi mong muốn được góp sức mình vào việc thúc đẩy du lịch bền vững, du lịch có trách nhiệm với môi trường và cộng đồng địa phương tại Thành phố Hồ Chí Minh."
+
+        },
+        "mission":{
+            "title":"Sứ mệnh",
+            "content":"Không chỉ đơn thuần là một website về quảng bá du lịch, chúng tôi định hướng xây dựng Xplore Saigon thành nơi kết nối con người thông qua việc khám phá và hiểu biết về các nền văn hóa đa dạng. Hơn thế nữa, qua dự án này, chúng tôi mong muốn được góp sức mình vào việc thúc đẩy du lịch bền vững, du lịch có trách nhiệm với môi trường và cộng đồng địa phương tại Thành phố Hồ Chí Minh."
+
+        }
+        
     }
 }
