@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .header-nav{
-        @apply text-lg font-medium;
-    }
+@layer components {
+  .header-nav {
+    @apply text-lg font-medium;
+  }
 }

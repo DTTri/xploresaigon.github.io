@@ -7,10 +7,15 @@ export default {
         primary: '#55C1FF',
         background: '#FEFEFE',
         text: '#000000',
-        gray: '#7D7D7D',
+        textSecondary: '#7C7C7C',
+        input: 'rgba(213,213,213,0.4)',
       },
       borderRadius: {
         poster: '12rem',
+      },
+      translate: {
+        mdouble: '-200%',
+        double: '200%',
       },
     },
   },

@@ -1,4 +1,4 @@
-import Header from '../Header';
+import Header from '../components/Header';
 import Introduction from './AboutUs/Introduction';
 import Mission from './AboutUs/Mission';
 import Vision from './AboutUs/Vision';
