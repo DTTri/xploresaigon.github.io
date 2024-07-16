@@ -4,6 +4,19 @@
     "explore": "Khám phá",
     "about": "Về chúng tôi"
   },
+  "categories": {
+    "all": "Tất cả",
+    "food": "Ăn uống",
+    "destination": "Tham quan",
+    "stay": "Lưu trú",
+    "festival": "Lễ hội"
+  },
+  "filters": {
+    "search": "Tìm kiếm",
+    "district": "Quận",
+    "sort-by": "Sắp xếp theo",
+    "other": "Bộ lọc"
+  },
   "about-us": {
     "introduction": {
       "title": "Khám phá Sài Gòn theo cách của bạn",

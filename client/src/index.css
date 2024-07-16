@@ -49,4 +49,18 @@
       }
     }
   }
+  .home-page {
+    .categories--a {
+      @apply text-xl text-text font-medium px-4 text-center;
+    }
+  }
+  .filter-bar {
+    .filters {
+      @apply relative flex items-center border border-gray-400 rounded-xl px-2 py-1;
+
+      .filters--select {
+        @apply outline-none w-full text-center text-lg text-text;
+      }
+    }
+  }
 }

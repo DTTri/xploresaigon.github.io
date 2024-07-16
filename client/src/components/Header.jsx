@@ -32,7 +32,7 @@ export default function Header() {
           </div>
         </div>
 
-        <div className='flex pr-12 gap-4'>
+        <div className='flex gap-4'>
           <button>
             <box-icon name='cog' size='sm'></box-icon>
           </button>
@@ -42,7 +42,7 @@ export default function Header() {
           </button>
         </div>
       </header>
-      {isLoginPopupOpen && <LoginPopup onClose={handleCloseLoginPopup} />};
+      {isLoginPopupOpen && <LoginPopup onClose={handleCloseLoginPopup} />}
     </>
   );
 }

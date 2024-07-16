@@ -17,7 +17,10 @@ export default {
         mdouble: '-200%',
         double: '200%',
       },
+      padding: {
+        full: '100%',
+      },
     },
   },
-  plugins: [],
+  plugins: [import('@tailwindcss/line-clamp')],
 };

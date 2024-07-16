@@ -105,7 +105,7 @@ export default function LoginPopup({ onClose }) {
             }`}
         >
           <div
-            className={`toggle bg-primary h-full bg-gradient-to-r from-primary to-blue-500 text-text absolute left-[-100%] h-full w-[200%] transition-all duration-300 ease-in-out ${
+            className={`toggle bg-primary h-full bg-gradient-to-r from-primary to-blue-500 text-text absolute left-[-100%] w-[200%] transition-all duration-300 ease-in-out ${
               isActive ? 'translate-x-1/2' : 'translate-x-0'
             }`}
           >
