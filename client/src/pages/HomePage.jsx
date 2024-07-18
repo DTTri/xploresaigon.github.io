@@ -1,6 +1,5 @@
 import CategoryBar from '../components/CategoryBar';
 import FilterBar from '../components/FilterBar';
-import Header from '../components/Header';
 import PostsGallery from '../components/PostsGallery';
 import { useTranslation } from '../i18n';
 
@@ -138,7 +137,6 @@ export default function HomePage() {
   ];
   return (
     <>
-      <Header />
       <div className='home-page flex flex-col px-10'>
         <h1 className='text-center text-4xl font-bold mt-10 mb-10'>
           {t('title')}
