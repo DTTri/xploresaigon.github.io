@@ -4,10 +4,10 @@ import Vision from './AboutUs/Vision';
 
 export default function AboutUsPage() {
   return (
-    <>
+    <div className='bg-background'>
       <Introduction />
       <Vision />
       <Mission />
-    </>
+    </div>
   );
 }

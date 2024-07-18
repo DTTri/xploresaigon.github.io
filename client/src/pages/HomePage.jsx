@@ -137,7 +137,7 @@ export default function HomePage() {
   ];
   return (
     <>
-      <div className='home-page flex flex-col px-10'>
+      <div className='home-page flex flex-col px-10 bg-background'>
         <h1 className='text-center text-4xl font-bold mt-10 mb-10'>
           {t('title')}
         </h1>

@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <>
-      <header className='px-12 py-4 flex justify-between'>
+      <header className='px-12 py-4 flex justify-between bg-background'>
         <a href=''>XploreSaigon</a>
 
         <div className='flex gap-10'>

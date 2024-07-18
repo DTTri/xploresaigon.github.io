@@ -31,6 +31,13 @@
       "content": "Không chỉ đơn thuần là một website về quảng bá du lịch, chúng tôi định hướng xây dựng Xplore Saigon thành nơi kết nối con người thông qua việc khám phá và hiểu biết về các nền văn hóa đa dạng. Hơn thế nữa, qua dự án này, chúng tôi mong muốn được góp sức mình vào việc thúc đẩy du lịch bền vững, du lịch có trách nhiệm với môi trường và cộng đồng địa phương tại Thành phố Hồ Chí Minh."
     }
   },
+  "post-details": {
+    "introduction": "Tìm hiểu",
+    "general": "Giới thiệu chung",
+    "contact": "Thông tin liên hệ",
+    "comment": "Cảm nhận về bài viết",
+    "other-posts": "Các địa điểm liên quan"
+  },
   "login": {
     "sign-in": {
       "title": "Đăng nhập",

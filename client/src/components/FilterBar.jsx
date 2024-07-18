@@ -11,7 +11,7 @@ export default function FilterBar() {
         <input
           type='text'
           placeholder={t('filters.search')}
-          className='pl-8 outline-none w-full'
+          className='pl-8 outline-none w-full bg-transparent'
         />
       </div>
 

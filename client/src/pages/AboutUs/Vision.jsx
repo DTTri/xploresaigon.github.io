@@ -4,7 +4,7 @@ export default function Vision() {
   const { t } = useTranslation();
   return (
     <>
-      <div className='h-screen max-h-screen flex items-center justify-between flex-wrap overflow-hidden'>
+      <div className='h-screen max-h-screen flex items-center justify-between flex-wrap overflow-hidden bg-white'>
         <div className='vision--image basis-1/2'>
           <img
             className='h-screen max-h-screen rounded-r-poster'
