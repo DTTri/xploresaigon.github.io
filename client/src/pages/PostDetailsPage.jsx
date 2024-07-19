@@ -5,6 +5,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import PostItem from '../components/PostItem';
+import Comment from '../components/Comment';
+import ViewAllCommentsPopup from '../components/ViewAllCommentsPopup';
+import { useState } from 'react';
 const NextArrow = (props) => {
   const { arrowClassName, arrowStyle, arrowOnClick } = props;
   return (
@@ -67,6 +70,7 @@ export default function PostDetailsPage() {
         name: 'Nguyen Van A',
         reviewDate: '01/07/2024',
         avatar: '/images/about-us/poster-2.jpg',
+        likes: 40,
         content:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
       },
@@ -75,6 +79,7 @@ export default function PostDetailsPage() {
         name: 'Nguyen Van A',
         reviewDate: '01/07/2024',
         avatar: '/images/about-us/poster-2.jpg',
+        likes: 40,
         content:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
       },
@@ -83,6 +88,7 @@ export default function PostDetailsPage() {
         name: 'Nguyen Van A',
         reviewDate: '01/07/2024',
         avatar: '/images/about-us/poster-2.jpg',
+        likes: 40,
         content:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
       },
@@ -91,6 +97,7 @@ export default function PostDetailsPage() {
         name: 'Nguyen Van A',
         reviewDate: '01/07/2024',
         avatar: '/images/about-us/poster-2.jpg',
+        likes: 40,
         content:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
       },
@@ -99,6 +106,7 @@ export default function PostDetailsPage() {
         name: 'Nguyen Van A',
         reviewDate: '01/07/2024',
         avatar: '/images/about-us/poster-2.jpg',
+        likes: 40,
         content:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
       },
@@ -239,203 +247,187 @@ export default function PostDetailsPage() {
       break;
   }
 
+  const [isViewAllCommentsPopupOpen, setIsViewAllCommentsPopupOpen] =
+    useState(false);
+  const handleOpenViewAllCommentsPopup = () => {
+    setIsViewAllCommentsPopupOpen(true);
+  };
+  const handleCloseViewAllCommentsPopup = () => {
+    setIsViewAllCommentsPopupOpen(false);
+  };
+
   return (
-    <div className='post-details-page px-28 py-6 bg-background'>
-      <h1 className='text-3xl font-bold mb-3'>{post.title}</h1>
-      <div className='information--container flex justify-between items-center mb-8'>
-        <div className='information--block information--block-left basis-1/2'>
-          <div className='information--items'>
-            <box-icon name={iconName}></box-icon>
-            <span>{post.category}</span>
+    <>
+      <div className='post-details-page px-28 py-6 bg-background'>
+        <h1 className='text-4xl font-bold mb-3'>{post.title}</h1>
+        <div className='information--container flex justify-between items-center mb-8'>
+          <div className='information--block information--block-left basis-1/2'>
+            <div className='information--items'>
+              <box-icon name={iconName}></box-icon>
+              <span>{post.category}</span>
+            </div>
+            <div className='information--items'>
+              <box-icon name='map'></box-icon>
+              <span>{post.address}</span>
+            </div>
+            <div className='information--items'>
+              <box-icon name='door-open'></box-icon>
+              <span>Mở cửa: {post.openingHours}</span>
+            </div>
           </div>
-          <div className='information--items'>
-            <box-icon name='map'></box-icon>
-            <span>{post.address}</span>
+
+          <div className='information--block information--block-right basis-1/3'>
+            <div className='information--items'>
+              <box-icon name='calendar'></box-icon>
+              <span>Ngày đăng: {post.postedDate}</span>
+            </div>
+            <div className='information--items'>
+              <box-icon name='mouse-alt'></box-icon>
+              <span>Lượt xem: {post.views}</span>
+            </div>
+            <div className='information--items'>
+              <box-icon name='message-alt-edit'></box-icon>
+              <span>Lượt đánh giá: {post.reviews}</span>
+            </div>
           </div>
-          <div className='information--items'>
-            <box-icon name='door-open'></box-icon>
-            <span>Mở cửa: {post.openingHours}</span>
+
+          <div className='information--block buttons--container basis-1/6 pl-20'>
+            <button className='information--items information__buttons'>
+              <box-icon name='heart' size='sm'></box-icon>
+              <span>Yêu thích</span>
+            </button>
+            <button className='information--items information__buttons'>
+              <box-icon name='share' size='sm'></box-icon>
+              <span>Chia sẻ</span>
+            </button>
           </div>
         </div>
 
-        <div className='information--block information--block-right basis-1/3'>
-          <div className='information--items'>
-            <box-icon name='calendar'></box-icon>
-            <span>Ngày đăng: {post.postedDate}</span>
+        <div className='images--container flex justify-between gap-2 h-96 overflow-hidden mb-8'>
+          <div className='images--left basis-1/2 overflow-hidden rounded-lg'>
+            <div className='images-wrapper'>
+              <img
+                src={post.imagesList[0]}
+                alt={post.title}
+                className='images--left__image'
+              />
+            </div>
           </div>
-          <div className='information--items'>
-            <box-icon name='mouse-alt'></box-icon>
-            <span>Lượt xem: {post.views}</span>
-          </div>
-          <div className='information--items'>
-            <box-icon name='message-alt-edit'></box-icon>
-            <span>Lượt đánh giá: {post.reviews}</span>
+
+          <div className='images--right basis-1/2 grid grid-cols-2 gap-2 overflow-hidden'>
+            <div className='images-wrapper'>
+              <img
+                src={post.imagesList[1]}
+                alt={post.title}
+                className='images--right__image'
+              />
+            </div>
+            <div className='images-wrapper'>
+              <img
+                src={post.imagesList[2]}
+                alt={post.title}
+                className='images--right__image'
+              />
+            </div>
+            <div className='images-wrapper'>
+              <img
+                src={post.imagesList[3]}
+                alt={post.title}
+                className='images--right__image'
+              />
+            </div>
+            <div className='images-wrapper'>
+              <img
+                src={post.imagesList[4]}
+                alt={post.title}
+                className='images--right__image'
+              />
+            </div>
           </div>
         </div>
 
-        <div className='information--block buttons--container basis-1/6 pl-20'>
-          <button className='information--items information__buttons'>
-            <box-icon name='heart' size='sm'></box-icon>
-            <span>Yêu thích</span>
+        <div className='introduction--container px-6 pt-4 pb-10 mb-8 relative shadow-md w-full rounded-2xl bg-white'>
+          <h2 className='text-3xl font-bold my-2'>
+            {t('post-details.introduction')}
+          </h2>
+          <hr className='mb-4' />
+          <div className='introduction--general px-2 mb-4'>
+            <h3 className='text-2xl font-medium mb-1'>
+              {t('post-details.general')}
+            </h3>
+            <p className='text-xl'>{post.introduction}</p>
+          </div>
+          <div className='introduction--contact px-2'>
+            <h3 className='text-2xl font-medium mb-1'>
+              {t('post-details.contact')}
+            </h3>
+            <div className='contact--container flex flex-col gap-1'>
+              <div className='contact--items'>
+                <box-icon name='info-circle'></box-icon>
+                <span>
+                  Cách thức đặt hàng: trực tiếp/ gọi điện thoại/ ứng dụng
+                </span>
+              </div>
+              <div className='contact--items'>
+                <box-icon name='phone'></box-icon>
+                <span>Hotline: {post.contact.phone}</span>
+              </div>
+              <div className='contact--items'>
+                <box-icon name='envelope'></box-icon>
+                <span>Email: {post.contact.email}</span>
+              </div>
+              <div className='contact--items'>
+                <box-icon name='globe'></box-icon>
+                <span>Website: {post.contact.website}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='review--container px-6 py-4 mb-8 relative shadow-md w-full rounded-2xl bg-white'>
+          <button className='absolute top-4 right-12 bg-primary text-black font-semibold text-lg px-2 py-1 rounded-lg'>
+            Viết bình luận
           </button>
-          <button className='information--items information__buttons'>
-            <box-icon name='share' size='sm'></box-icon>
-            <span>Chia sẻ</span>
+          <h2 className='text-3xl font-bold my-2'>
+            {t('post-details.comment')}
+          </h2>
+          <hr className='mb-4' />
+
+          <div className='comment--container flex flex-col gap-1 mb-4'>
+            <Comment comment={post.commentsList[0]} />
+            <Comment comment={post.commentsList[0]} />
+            <Comment comment={post.commentsList[0]} />
+          </div>
+          <button
+            className='text-textSecondary'
+            onClick={handleOpenViewAllCommentsPopup}
+            //
+          >
+            Xem tất cả đánh giá
           </button>
         </div>
-      </div>
 
-      <div className='images--container flex justify-between gap-2 h-96 overflow-hidden mb-8'>
-        <div className='images--left basis-1/2 overflow-hidden rounded-lg'>
-          <div className='images-wrapper'>
-            <img
-              src={post.imagesList[0]}
-              alt={post.title}
-              className='images--left__image'
-            />
-          </div>
-        </div>
-
-        <div className='images--right basis-1/2 grid grid-cols-2 gap-2 overflow-hidden'>
-          <div className='images-wrapper'>
-            <img
-              src={post.imagesList[1]}
-              alt={post.title}
-              className='images--right__image'
-            />
-          </div>
-          <div className='images-wrapper'>
-            <img
-              src={post.imagesList[2]}
-              alt={post.title}
-              className='images--right__image'
-            />
-          </div>
-          <div className='images-wrapper'>
-            <img
-              src={post.imagesList[3]}
-              alt={post.title}
-              className='images--right__image'
-            />
-          </div>
-          <div className='images-wrapper'>
-            <img
-              src={post.imagesList[4]}
-              alt={post.title}
-              className='images--right__image'
-            />
-          </div>
-        </div>
-      </div>
-
-      <div className='introduction--container px-6 pt-4 pb-10 mb-8 relative shadow-md w-full rounded-2xl bg-white'>
-        <h2 className='text-3xl font-bold mb-1'>
-          {t('post-details.introduction')}
-        </h2>
-        <hr className='mb-4' />
-        <div className='introduction--general px-2 mb-4'>
-          <h3 className='text-2xl font-medium mb-1'>
-            {t('post-details.general')}
-          </h3>
-          <p className='text-xl'>{post.introduction}</p>
-        </div>
-        <div className='introduction--contact px-2'>
-          <h3 className='text-2xl font-medium mb-1'>
-            {t('post-details.contact')}
-          </h3>
-          <div className='contact--container flex flex-col gap-1'>
-            <div className='contact--items'>
-              <box-icon name='info-circle'></box-icon>
-              <span>
-                Cách thức đặt hàng: trực tiếp/ gọi điện thoại/ ứng dụng
-              </span>
-            </div>
-            <div className='contact--items'>
-              <box-icon name='phone'></box-icon>
-              <span>Hotline: {post.contact.phone}</span>
-            </div>
-            <div className='contact--items'>
-              <box-icon name='envelope'></box-icon>
-              <span>Email: {post.contact.email}</span>
-            </div>
-            <div className='contact--items'>
-              <box-icon name='globe'></box-icon>
-              <span>Website: {post.contact.website}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className='review--container px-6 py-4 mb-8 relative shadow-md w-full rounded-2xl bg-white'>
-        <button className='absolute top-3 right-12 bg-primary text-black font-semibold text-lg px-2 py-1 rounded-lg'>
-          Viết bình luận
-        </button>
-        <h2 className='text-3xl font-bold mb-1'>{t('post-details.comment')}</h2>
-        <hr className='mb-4' />
-
-        <div className='comment--container flex flex-col gap-1 mb-4'>
-          <div className='comment--items'>
-            <div className='comment--user'>
-              <img
-                src={post.commentsList[0].avatar}
-                alt='User Avatar'
-                className=''
-              />
-              <div className='comment--user__info'>
-                <h3 className=''>{post.commentsList[0].name}</h3>
-                <span>{post.commentsList[0].reviewDate}</span>
+        <div className='other-posts--container px-6 pt-4 pb-8 mb-8 relative shadow-md w-full rounded-2xl bg-white'>
+          <h2 className='text-3xl font-bold my-2'>
+            {t('post-details.other-posts')}
+          </h2>
+          <hr className='mb-4' />
+          <Slider {...slickSettings}>
+            {post.otherPosts.map((otherPost) => (
+              <div key={otherPost.id} className='px-2'>
+                <PostItem post={otherPost} />
               </div>
-            </div>
-            <p className='comment--content'>{post.commentsList[0].content}</p>
-          </div>
-          <div className='comment--items'>
-            <div className='comment--user'>
-              <img
-                src={post.commentsList[0].avatar}
-                alt='User Avatar'
-                className=''
-              />
-              <div className='comment--user__info'>
-                <h3 className=''>{post.commentsList[0].name}</h3>
-                <span>{post.commentsList[0].reviewDate}</span>
-              </div>
-            </div>
-            <p className='comment--content'>{post.commentsList[0].content}</p>
-          </div>
-          <div className='comment--items'>
-            <div className='comment--user'>
-              <img
-                src={post.commentsList[0].avatar}
-                alt='User Avatar'
-                className=''
-              />
-              <div className='comment--user__info'>
-                <h3 className=''>{post.commentsList[0].name}</h3>
-                <span>{post.commentsList[0].reviewDate}</span>
-              </div>
-            </div>
-            <p className='comment--content'>{post.commentsList[0].content}</p>
-          </div>
+            ))}
+          </Slider>
         </div>
-        <a className='text-textSecondary' href='#'>
-          Xem tất cả đánh giá
-        </a>
       </div>
-
-      <div className='other-posts--container px-6 pt-4 pb-8 mb-8 relative shadow-md w-full rounded-2xl bg-white'>
-        <h2 className='text-3xl font-bold mb-1'>
-          {t('post-details.other-posts')}
-        </h2>
-        <hr className='mb-4' />
-        <Slider {...slickSettings}>
-          {post.otherPosts.map((otherPost) => (
-            <div key={otherPost.id} className='px-2'>
-              <PostItem post={otherPost} />
-            </div>
-          ))}
-        </Slider>
-      </div>
-    </div>
+      {isViewAllCommentsPopupOpen && (
+        <ViewAllCommentsPopup
+          comments={post.commentsList}
+          onClose={handleCloseViewAllCommentsPopup}
+        />
+      )}
+    </>
   );
 }
 

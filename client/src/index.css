@@ -100,23 +100,23 @@
         }
       }
     }
-    .comment--container {
-      .comment--items {
-        .comment--user {
-          @apply flex gap-2 items-center mb-1;
+  }
+  .comment--container {
+    .comment--items {
+      .comment--user {
+        @apply flex gap-2 items-center mb-1;
 
-          img {
-            @apply w-12 h-12 rounded-full;
-          }
-          .comment--user__info {
-            h3 {
-              @apply text-xl font-semibold;
-            }
+        img {
+          @apply w-12 h-12 rounded-full;
+        }
+        .comment--user__info {
+          h3 {
+            @apply text-xl font-semibold;
           }
         }
-        .comment--content {
-          @apply text-lg pl-1;
-        }
+      }
+      .comment--content {
+        @apply text-lg pl-1;
       }
     }
   }
