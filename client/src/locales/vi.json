@@ -36,7 +36,10 @@
     "general": "Giới thiệu chung",
     "contact": "Thông tin liên hệ",
     "comment": "Cảm nhận về bài viết",
-    "other-posts": "Các địa điểm liên quan"
+    "other-posts": "Các địa điểm liên quan",
+    "write-comment": "Viết bình luận",
+    "close": "Đóng",
+    "submit-comment": "Đăng"
   },
   "login": {
     "sign-in": {

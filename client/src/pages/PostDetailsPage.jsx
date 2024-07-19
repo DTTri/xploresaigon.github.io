@@ -8,6 +8,7 @@ import PostItem from '../components/PostItem';
 import Comment from '../components/Comment';
 import ViewAllCommentsPopup from '../components/ViewAllCommentsPopup';
 import { useState } from 'react';
+import WriteCommentPopup from '../components/WriteCommentPopup';
 const NextArrow = (props) => {
   const { arrowClassName, arrowStyle, arrowOnClick } = props;
   return (
@@ -256,6 +257,13 @@ export default function PostDetailsPage() {
     setIsViewAllCommentsPopupOpen(false);
   };
 
+  const [isWriteCommentPopupOpen, setIsWriteCommentPopupOpen] = useState(false);
+  const handleOpenWriteCommentPopup = () => {
+    setIsWriteCommentPopupOpen(true);
+  };
+  const handleCloseWriteCommentPopup = () => {
+    setIsWriteCommentPopupOpen(false);
+  };
   return (
     <>
       <div className='post-details-page px-28 py-6 bg-background'>
@@ -385,7 +393,10 @@ export default function PostDetailsPage() {
         </div>
 
         <div className='review--container px-6 py-4 mb-8 relative shadow-md w-full rounded-2xl bg-white'>
-          <button className='absolute top-4 right-12 bg-primary text-black font-semibold text-lg px-2 py-1 rounded-lg'>
+          <button
+            className='absolute top-4 right-12 bg-primary text-black font-semibold text-lg px-2 py-1 rounded-lg'
+            onClick={handleOpenWriteCommentPopup}
+          >
             Viết bình luận
           </button>
           <h2 className='text-3xl font-bold my-2'>
@@ -426,6 +437,9 @@ export default function PostDetailsPage() {
           comments={post.commentsList}
           onClose={handleCloseViewAllCommentsPopup}
         />
+      )}
+      {isWriteCommentPopupOpen && (
+        <WriteCommentPopup onClose={handleCloseWriteCommentPopup} post={post} />
       )}
     </>
   );

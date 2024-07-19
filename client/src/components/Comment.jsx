@@ -2,7 +2,7 @@ import Proptypes from 'prop-types';
 
 export default function Comment({ comment }) {
   return (
-    <div className='comment--items mb-3'>
+    <div className='comment--items mb-4'>
       <div className='comment--user'>
         <img src={comment.avatar} alt='User Avatar' className='' />
         <div className='comment--user__info'>

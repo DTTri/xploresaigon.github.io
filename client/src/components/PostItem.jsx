@@ -9,7 +9,7 @@ export default function PostItem({ post }) {
           <img
             src='/images/about-us/poster-1.jpg'
             alt={post.title}
-            className='gallery__item--image absolute top-0 left-0 w-full h-full object-cover rounded-xl'
+            className='gallery__item--image absolute top-0 left-0 w-full object-cover rounded-xl'
           />
         </div>
         <div className='gallery__item--content pt-1 overflow-hidden'>
