@@ -6,7 +6,7 @@ export default function WriteCommentPopup({ post, onClose }) {
 
   return (
     <div className='fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center'>
-      <div className='px-10 relative bg-background rounded-3xl shadow-lg overflow-hidden w-full max-w-4xl max-h-[480px]'>
+      <div className='px-10  relative bg-background rounded-3xl shadow-lg overflow-hidden w-full max-w-4xl max-h-[480px]'>
         <button className='absolute top-2 right-2 z-50' onClick={onClose}>
           <box-icon
             name='x'
@@ -38,7 +38,7 @@ export default function WriteCommentPopup({ post, onClose }) {
             <h3 className='text-2xl font-semibold mb-4'>
               {t('post-details.write-comment')}
             </h3>
-            <textarea className='resize-none w-full h-1/2 p-4 bg-white rounded-2xl shadow-md'></textarea>
+            <textarea className='resize-none w-full h-1/2 p-4 bg-white rounded-2xl shadow-lg'></textarea>
           </div>
         </div>
       </div>
