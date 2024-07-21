@@ -41,6 +41,10 @@
     "close": "Đóng",
     "submit-comment": "Đăng bình luận"
   },
+  "settings": {
+    "dark-mode": "Chế độ tối",
+    "language": "Ngôn ngữ"
+  },
   "login": {
     "sign-in": {
       "title": "Đăng nhập",

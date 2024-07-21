@@ -14,6 +14,11 @@ export default function Header() {
     setIsLoginPopupOpen(false);
   };
 
+  const [isSettingsMenuOpen, setIsSettingsMenuOpen] = useState(false);
+  const handleSettingsClick = () => {
+    setIsSettingsMenuOpen(!isSettingsMenuOpen);
+  };
+
   return (
     <>
       <header className='px-12 py-4 flex justify-between bg-background'>
@@ -32,10 +37,22 @@ export default function Header() {
           </div>
         </div>
 
-        <div className='flex gap-4'>
-          <button>
+        <div className='flex gap-4 relative'>
+          <button className='button-settings' onClick={handleSettingsClick}>
             <box-icon name='cog' size='sm'></box-icon>
           </button>
+          {isSettingsMenuOpen && (
+            <div className='settings-menu absolute top-full right-8 bg-white border border-gray-400 shadow-md rounded-xl z-50 w-40 p-2 flex flex-col gap-1'>
+              <div className='settings-menu--item dark-mode'>
+                <span>{t('settings.dark-mode')}</span>
+                <input type='checkbox' id='dark-mode__toggle' />
+                <label htmlFor='dark-mode__toggle'></label>
+              </div>
+              <div className='settings-menu--item language'>
+                <span>{t('settings.language')}</span>
+              </div>
+            </div>
+          )}
 
           <button className='button--login' onClick={handleLoginClick}>
             <box-icon name='log-in-circle' size='sm'></box-icon>

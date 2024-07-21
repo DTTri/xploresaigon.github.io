@@ -268,7 +268,7 @@ export default function PostDetailsPage() {
     <>
       <div className='post-details-page px-28 py-6 bg-background'>
         <h1 className='text-4xl font-bold mb-3'>{post.title}</h1>
-        <div className='information--container flex justify-between items-center mb-8'>
+        <div className='information--container flex justify-between flex-wrap mb-8'>
           <div className='information--block information--block-left basis-1/2'>
             <div className='information--items'>
               <box-icon name={iconName}></box-icon>
@@ -299,7 +299,7 @@ export default function PostDetailsPage() {
             </div>
           </div>
 
-          <div className='information--block buttons--container basis-1/6 pl-20'>
+          <div className='information--block buttons--container basis-1/6'>
             <button className='information--items information__buttons'>
               <box-icon name='heart' size='sm'></box-icon>
               <span>Yêu thích</span>

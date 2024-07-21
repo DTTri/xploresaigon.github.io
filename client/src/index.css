@@ -71,15 +71,17 @@
         .information--items {
           @apply flex items-center justify-start gap-2;
           span {
-            @apply text-base text-text;
+            @apply text-base text-text min-w-40;
           }
         }
         .information__buttons {
-          @apply my-1;
           span {
-            @apply underline;
+            @apply underline min-w-16;
           }
         }
+      }
+      .buttons--container {
+        @apply flex flex-col gap-3 mt-3;
       }
     }
     .images--container {
@@ -118,6 +120,32 @@
       .comment--content {
         @apply text-lg pl-1;
       }
+    }
+  }
+  .settings-menu--item {
+    @apply flex gap-2;
+    label {
+      @apply w-11 h-5 relative block bg-background rounded-3xl cursor-pointer;
+      transition: 0.3s;
+      box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.4),
+        inset 0px -1px 3px rgba(255, 255, 255, 0.4);
+    }
+    label:after {
+      content: '';
+      @apply w-4 h-4 top-0.5 left-0.5 absolute rounded-full;
+      background: linear-gradient(180deg, #ffcc89, #d8860b);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+    }
+    input {
+      @apply w-0 h-0 hidden;
+    }
+    input:checked + label {
+      background: #002858;
+    }
+    input:checked + label:after {
+      transform: translateX(150%);
+      background: linear-gradient(180deg, #777, #3a3a3a);
     }
   }
 }
