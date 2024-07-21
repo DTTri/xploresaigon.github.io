@@ -51,14 +51,14 @@
   }
   .home-page {
     .categories--a {
-      @apply text-xl text-text font-medium px-4 text-center;
+      @apply text-xl text-text dark:text-white font-medium px-4 text-center;
     }
     .filter-bar {
       .filters {
         @apply relative flex items-center border border-gray-400 rounded-xl px-2 py-1;
 
         .filters--select {
-          @apply outline-none w-full text-center text-lg text-text bg-transparent;
+          @apply outline-none w-full text-center text-lg text-text dark:text-white bg-transparent;
         }
       }
     }
@@ -71,7 +71,7 @@
         .information--items {
           @apply flex items-center justify-start gap-2;
           span {
-            @apply text-base text-text min-w-40;
+            @apply text-base text-text dark:text-white min-w-40;
           }
         }
         .information__buttons {
@@ -97,7 +97,7 @@
         .contact--items {
           @apply flex items-center justify-start gap-2;
           span {
-            @apply text-xl text-text;
+            @apply text-xl text-text dark:text-white;
           }
         }
       }
@@ -147,5 +147,8 @@
       transform: translateX(150%);
       background: linear-gradient(180deg, #777, #3a3a3a);
     }
+  }
+  body.dark box-icon {
+    color: white;
   }
 }

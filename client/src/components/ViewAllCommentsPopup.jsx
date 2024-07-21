@@ -3,7 +3,7 @@ import Comment from './Comment';
 export default function ViewAllCommentsPopup({ comments, onClose }) {
   return (
     <div className='fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center'>
-      <div className='py-4 px-6 relative bg-background rounded-3xl shadow-lg overflow-hidden w-full max-w-4xl max-h-[480px]'>
+      <div className='py-4 px-6 relative bg-background dark:bg-secondDarkBackground dark:text-white rounded-3xl shadow-lg overflow-hidden w-full max-w-4xl max-h-[480px]'>
         <button className='absolute top-2 right-2 z-50' onClick={onClose}>
           <box-icon
             name='x'
@@ -16,7 +16,7 @@ export default function ViewAllCommentsPopup({ comments, onClose }) {
           <box-icon name='sort' class='absolute left-3' size='sm'></box-icon>
           <select
             name='sort-by'
-            className='filters--select w-full outline-none text-center text-base text-text bg-transparent pl-4'
+            className='filters--select w-full outline-none text-center text-base text-text dark:text-white bg-transparent pl-4'
           >
             <option value=''>Mới nhất</option>
           </select>

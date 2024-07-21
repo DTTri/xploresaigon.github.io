@@ -4,7 +4,7 @@ import Vision from './AboutUs/Vision';
 
 export default function AboutUsPage() {
   return (
-    <div className='bg-background'>
+    <div className='bg-background dark:bg-darkBackground'>
       <Introduction />
       <Vision />
       <Mission />

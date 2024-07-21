@@ -266,8 +266,10 @@ export default function PostDetailsPage() {
   };
   return (
     <>
-      <div className='post-details-page px-28 py-6 bg-background'>
-        <h1 className='text-4xl font-bold mb-3'>{post.title}</h1>
+      <div className='post-details-page px-28 py-6 bg-background dark:bg-darkBackground'>
+        <h1 className='text-4xl font-bold mb-3 dark:text-white'>
+          {post.title}
+        </h1>
         <div className='information--container flex justify-between flex-wrap mb-8'>
           <div className='information--block information--block-left basis-1/2'>
             <div className='information--items'>
@@ -354,7 +356,7 @@ export default function PostDetailsPage() {
           </div>
         </div>
 
-        <div className='introduction--container px-6 pt-4 pb-10 mb-8 relative shadow-md w-full rounded-2xl bg-white'>
+        <div className='introduction--container px-6 pt-4 pb-10 mb-8 relative shadow-md w-full rounded-2xl bg-white dark:bg-secondDarkBackground dark:text-white'>
           <h2 className='text-3xl font-bold my-2'>
             {t('post-details.introduction')}
           </h2>
@@ -392,7 +394,7 @@ export default function PostDetailsPage() {
           </div>
         </div>
 
-        <div className='review--container px-6 py-4 mb-8 relative shadow-md w-full rounded-2xl bg-white'>
+        <div className='review--container px-6 py-4 mb-8 relative shadow-md w-full rounded-2xl bg-white dark:bg-secondDarkBackground dark:text-white'>
           <button
             className='absolute top-4 right-12 bg-primary text-black font-semibold text-lg px-2 py-1 rounded-lg'
             onClick={handleOpenWriteCommentPopup}
@@ -418,7 +420,7 @@ export default function PostDetailsPage() {
           </button>
         </div>
 
-        <div className='other-posts--container px-6 pt-4 pb-8 mb-8 relative shadow-md w-full rounded-2xl bg-white'>
+        <div className='other-posts--container px-6 pt-4 pb-8 mb-8 relative shadow-md w-full rounded-2xl bg-white dark:bg-secondDarkBackground dark:text-white'>
           <h2 className='text-3xl font-bold my-2'>
             {t('post-details.other-posts')}
           </h2>

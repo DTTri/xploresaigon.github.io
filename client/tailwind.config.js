@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -9,6 +10,8 @@ export default {
         text: '#000000',
         textSecondary: '#7C7C7C',
         input: 'rgba(213,213,213,0.4)',
+        darkBackground: '#021219',
+        secondDarkBackground: '#081B25',
       },
       borderRadius: {
         poster: '12rem',
