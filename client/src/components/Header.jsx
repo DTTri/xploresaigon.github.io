@@ -2,6 +2,7 @@ import { useTranslation } from '../i18n';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import LoginPopup from './LoginPopup';
+import i18n from '../i18n/i18n';
 export default function Header() {
   const { t } = useTranslation();
 
@@ -26,6 +27,8 @@ export default function Header() {
     localStorage.setItem('isDarkMode', newDarkMode);
   };
 
+  const [language, setLanguage] = useState('vi');
+
   useEffect(() => {
     const savedDarkMode = localStorage.getItem('isDarkMode') === 'true';
     setIsDarkMode(savedDarkMode);
@@ -37,6 +40,7 @@ export default function Header() {
     }
   }, []);
 
+  // Update box-icons color when dark mode is toggled
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add('dark');
@@ -59,6 +63,16 @@ export default function Header() {
     // Cleanup observer on component unmount
     return () => observer.disconnect();
   }, [isDarkMode]);
+
+  const handleLanguageChange = (direction) => {
+    const languages = ['vi', 'en'];
+    const currentIndex = languages.indexOf(language);
+    const newIndex =
+      (currentIndex + direction + languages.length) % languages.length;
+
+    i18n.changeLanguage(languages[newIndex]);
+    setLanguage(languages[newIndex]);
+  };
 
   return (
     <>
@@ -96,6 +110,17 @@ export default function Header() {
               </div>
               <div className='settings-menu--item'>
                 <span>{t('settings.language')}</span>
+                <div className='language-slider flex items-center'>
+                  <button onClick={() => handleLanguageChange(-1)}>
+                    <box-icon name='chevron-left'></box-icon>
+                  </button>
+                  <span className='text-text dark:text-white mb-2 font-bold text-base'>
+                    {language.toUpperCase()}
+                  </span>
+                  <button onClick={() => handleLanguageChange(1)}>
+                    <box-icon name='chevron-right'></box-icon>
+                  </button>
+                </div>
               </div>
             </div>
           )}

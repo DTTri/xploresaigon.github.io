@@ -1,7 +1,73 @@
 {
   "title": "Explore Saigon by your own way!",
-    "nav": {
-      "explore": "Explore",
-      "about": "About us"
+  "nav": {
+    "explore": "Explore",
+    "about": "About us"
+  },
+  "categories": {
+    "all": "All",
+    "food": "Food",
+    "destination": "Destination",
+    "stay": "Stay",
+    "festival": "Festival"
+  },
+  "filters": {
+    "search": "Search",
+    "district": "District",
+    "sort-by": "Sort by",
+    "other": "Filters"
+  },
+  "about-us": {
+    "introduction": {
+      "title": "Explore Saigon by your own way",
+      "content": "We call this Xplore Saigon - a guidebook website for both domestic and international tourists who want to learn about and travel in Ho Chi Minh City. Xplore Saigon was born in 2024 with the goal of exploring, learning, discovering, and sharing knowledge and experiences about tourism. The word 'Explore' is the most suitable word to describe our website. And X - as we understand it, is an unknown, an interesting thing that is not announced in advance. Xplore Saigon brings you new things, travel suggestions in Saigon, and also motivates you to go and explore everything about this wonderful city. We provide information with the function of a guidebook, your job is to go and experience it yourself. What awaits you on the trip? Only you can know! Come on, Explore Saigon your way."
+    },
+    "vision": {
+      "title": "Vision",
+      "content": "Not just a website for tourism promotion, we aim to build Xplore Saigon into a place that connects people through the exploration and understanding of diverse cultures. Moreover, through this project, we want to contribute to promoting sustainable tourism, responsible tourism to the environment and the local community in Ho Chi Minh City."
+    },
+    "mission": {
+      "title": "Mission",
+      "content": "Not just a website for tourism promotion, we aim to build Xplore Saigon into a place that connects people through the exploration and understanding of diverse cultures. Moreover, through this project, we want to contribute to promoting sustainable tourism, responsible tourism to the environment and the local community in Ho Chi Minh City."
+    }
+  },
+  "post-details": {
+    "introduction": "Introduction",
+    "general": "General introduction",
+    "contact": "Contact information",
+    "comment": "Comments on the post",
+    "other-posts": "Related places",
+    "write-comment": "Write a comment",
+    "close": "Close",
+    "submit-comment": "Submit comment"
+  },
+  "settings": {
+    "dark-mode": "Dark mode",
+    "language": "Language"
+  },
+  "login": {
+    "sign-in": {
+      "title": "Sign in",
+      "other": "or sign in with a registered account",
+      "email": "Email",
+      "password": "Password",
+      "forgot-password": "Forgot password?",
+      "toggle": {
+        "title": "Don't have an account?",
+        "content": "Register to experience more features!"
+      }
+    },
+    "sign-up": {
+      "title": "Sign up",
+      "other": "or use email to sign up",
+      "email": "Email",
+      "password": "Password",
+      "confirm-password": "Confirm password",
+      "full-name": "Full name",
+      "toggle": {
+        "title": "Already have an account?",
+        "content": "Welcome back, continue exploring beloved Saigon!"
+      }
     }
   }
+}
