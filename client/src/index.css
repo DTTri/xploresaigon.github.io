@@ -151,4 +151,54 @@
   body.dark box-icon {
     color: white;
   }
+  .admin-page {
+    .nav-bar {
+      .nav-bar--item {
+        @apply text-gray-600;
+      }
+      .nav-bar--item.active {
+        @apply text-black text-base p-2 font-bold bg-primary w-full text-start;
+      }
+    }
+    .posts-tab {
+      .filters--container {
+        .filters--items {
+          @apply flex flex-col gap-1;
+          input,
+          select {
+            @apply border border-gray-600 rounded-lg p-2;
+          }
+          .filter--search-by-name__select {
+            @apply w-2/3 p-0 rounded-none border-gray-300;
+          }
+        }
+      }
+      .posts-list {
+        th,
+        td {
+          @apply border border-gray-300 border-collapse text-center;
+        }
+      }
+    }
+    .users-tab {
+      .filters--container {
+        .filters--items {
+          @apply flex flex-col gap-1;
+          input,
+          select {
+            @apply border border-gray-600 rounded-lg p-2;
+          }
+          .filter--search-by-name__select {
+            @apply w-1/3 p-0 rounded-none border-gray-300;
+          }
+        }
+      }
+      .users-list {
+        th,
+        td {
+          @apply border border-gray-300 border-collapse text-center;
+        }
+      }
+    }
+  }
 }

@@ -90,6 +90,12 @@ export default function Header() {
               {t('nav.about')}
             </Link>
           </div>
+          {/* navigate to the admin page */}
+          <div>
+            <Link to='/admin' href='' className='header-nav'>
+              Admin
+            </Link>
+          </div>
         </div>
 
         <div className='flex gap-4 relative'>
