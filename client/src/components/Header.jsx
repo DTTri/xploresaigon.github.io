@@ -91,11 +91,11 @@ export default function Header() {
             </Link>
           </div>
           {/* navigate to the admin page */}
-          <div>
+          {/* <div>
             <Link to='/admin' href='' className='header-nav'>
               Admin
             </Link>
-          </div>
+          </div> */}
         </div>
 
         <div className='flex gap-4 relative'>

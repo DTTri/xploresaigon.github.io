@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import CreatePostPopup from '../../components/CreatePostPopup';
+
 export default function PostsTab() {
   const district = [
     'Quận 1',
@@ -352,6 +355,16 @@ export default function PostsTab() {
       shares: 20,
     },
   ];
+
+  const [isCreatePostPopupOpen, setIsCreatePostPopupOpen] = useState(false);
+
+  const handleOpenCreatePostPopup = () => {
+    setIsCreatePostPopupOpen(true);
+  };
+
+  const handleCloseCreatePostPopup = () => {
+    setIsCreatePostPopupOpen(false);
+  };
   return (
     <div className='posts-tab'>
       <div className='filters--container flex gap-2 flex-wrap justify-between items-center'>
@@ -410,7 +423,10 @@ export default function PostsTab() {
             <option value='least-liked'>Ít lượt thích nhất</option>
           </select>
         </div>
-        <button className='new-post__button bg-primary font-bold p-2 rounded-md'>
+        <button
+          className='new-post__button bg-primary font-bold p-2 rounded-md'
+          onClick={() => handleOpenCreatePostPopup()}
+        >
           Thêm bài viết mới
         </button>
       </div>
@@ -448,6 +464,9 @@ export default function PostsTab() {
           </tbody>
         </table>
       </div>
+      {isCreatePostPopupOpen && (
+        <CreatePostPopup onClose={() => handleCloseCreatePostPopup()} />
+      )}
     </div>
   );
 }

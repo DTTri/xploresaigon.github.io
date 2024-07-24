@@ -27,7 +27,7 @@ export default function FilterBar() {
       <div className='filters basis-1/6'>
         <box-icon name='sort' class='absolute left-3'></box-icon>
         <select name='sort-by' className='filters--select'>
-          <option value=''>{t('filters.sort-by')}</option>
+          <option value=''>{t('filters.sort.newest')}</option>
         </select>
       </div>
 

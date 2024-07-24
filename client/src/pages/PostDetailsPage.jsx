@@ -41,8 +41,7 @@ export default function PostDetailsPage() {
   // hardcode post data
   const post = {
     id: postId,
-    title:
-      'Landmark 81 sieu sang chanh danh cho gioi thuong luu, phai ghe it nhat 1 lan trong doi',
+    title: 'Landmark 81 -  tòa nhà chọc trời tại Thành phố Hồ Chí Minh',
     address: 'Nguyễn Huệ, Quận 1',
     category: 'Tham quan',
     openingHours: '8:00 - 22:00',
@@ -58,7 +57,7 @@ export default function PostDetailsPage() {
       '/images/about-us/poster-2.jpg',
     ],
     introduction:
-      'Bánh xèo ở quán không chỉ hấp dẫn người ăn bởi màu vàng đặc trưng mà còn khiến bạn ngây ngất vì hương vị thơm ngon, đậm đà của nó. Vẫn với tép tươi, thịt ba rọi, giá sống, củ hành, phần nhân bánh ở miền Nam đặc biệt có thêm đậu xanh nên béo và bùi hơn. Kích thước của chiếc bánh xèo khá to, người đầu bếp tại đây khéo léo đổ bột trên từng chiếc khuôn để tạo  cho bánh có lớp rìa mỏng tang và giòn xốp, mãn nhãn cả về phần nhìn lẫn thưởng thức. Chiếc bánh ra lò có kích thước bằng cái đĩa lớn, được tráng mỏng, vàng giòn, không ngấm nhiều dầu chiên. Mỗi chiếc bánh sau khi tráng xong nóng hổi, thơm phức, rìa bánh vàng giòn, nhân bánh trải đều được nhìn thấy rõ trên thân bánh đã được gập đôi sau khi chiên. Lắng tai nghe tiếng rôm rốp giòn tan khi bẻ và nhai bánh, khứu giác hít hà hương thơm lựng, mắt nhìn được đủ sắc màu vàng óng của bánh, xanh mượt mà của rau và đỏ au của nước mắm ớt. ',
+      'Landmark 81 là một biểu tượng kiến trúc nổi bật tại Thành phố Hồ Chí Minh, Việt Nam. Được hoàn thành vào năm 2018, tòa nhà này có chiều cao 461,2 mét với 81 tầng, trở thành tòa nhà cao nhất Việt Nam và Đông Nam Á. Nằm trong khu đô thị Vinhomes Central Park, Landmark 81 không chỉ là một điểm nhấn về mặt kiến trúc mà còn là một biểu tượng của sự phát triển và hiện đại hóa của thành phố.\n\nTòa nhà Landmark 81 được thiết kế bởi công ty kiến trúc Atkins và xây dựng bởi Tập đoàn Coteccons. Công trình này bao gồm nhiều tiện ích đa dạng như khách sạn, căn hộ cao cấp, trung tâm thương mại, văn phòng, và khu vui chơi giải trí. Với thiết kế hiện đại và tiện nghi cao cấp, Landmark 81 đã thu hút nhiều du khách và người dân địa phương đến tham quan và trải nghiệm.\n\nLandmark 81 không chỉ nổi bật với kiến trúc độc đáo mà còn mang đến nhiều dịch vụ và tiện ích cao cấp. Du khách có thể tận hưởng không gian mua sắm tại trung tâm thương mại Vincom Center, thưởng thức ẩm thực tại các nhà hàng sang trọng, và chiêm ngưỡng toàn cảnh thành phố từ đài quan sát SkyView trên tầng cao nhất. Với những tiện ích và dịch vụ hàng đầu, Landmark 81 đã trở thành một điểm đến hấp dẫn, thu hút sự quan tâm của cả người dân địa phương và du khách quốc tế.',
     contact: {
       phone: '0123456789',
       email: 'example@gmail.com',
@@ -73,7 +72,7 @@ export default function PostDetailsPage() {
         avatar: '/images/about-us/poster-2.jpg',
         likes: 40,
         content:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
+          'Bài viết khá hay và chi tiết, mình đã đến đây và cảm thấy rất hài lòng với dịch vụ, mọi người nên ghé thử nơi này!',
       },
       {
         id: 1,
@@ -82,7 +81,7 @@ export default function PostDetailsPage() {
         avatar: '/images/about-us/poster-2.jpg',
         likes: 40,
         content:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
+          'Bài viết khá chi tiết, mình đã đến đây và cảm thấy rất hài lòng với dịch vụ, mọi người nên ghé thử nơi này!',
       },
       {
         id: 1,
@@ -91,7 +90,7 @@ export default function PostDetailsPage() {
         avatar: '/images/about-us/poster-2.jpg',
         likes: 40,
         content:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
+          'Bài viết khá chi tiết, mình đã đến đây và cảm thấy rất hài lòng với dịch vụ, mọi người nên ghé thử nơi này!',
       },
       {
         id: 1,
@@ -100,7 +99,7 @@ export default function PostDetailsPage() {
         avatar: '/images/about-us/poster-2.jpg',
         likes: 40,
         content:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
+          'Bài viết khá chi tiết, mình đã đến đây và cảm thấy rất hài lòng với dịch vụ, mọi người nên ghé thử nơi này!',
       },
       {
         id: 1,
@@ -109,7 +108,16 @@ export default function PostDetailsPage() {
         avatar: '/images/about-us/poster-2.jpg',
         likes: 40,
         content:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.',
+          'Bài viết khá chi tiết, mình đã đến đây và cảm thấy rất hài lòng với dịch vụ, mọi người nên ghé thử nơi này!',
+      },
+      {
+        id: 1,
+        name: 'Nguyen Van A',
+        reviewDate: '01/07/2024',
+        avatar: '/images/about-us/poster-2.jpg',
+        likes: 40,
+        content:
+          'Bài viết khá chi tiết, mình đã đến đây và cảm thấy rất hài lòng với dịch vụ, mọi người nên ghé thử nơi này!',
       },
     ],
     otherPosts: [
@@ -289,26 +297,32 @@ export default function PostDetailsPage() {
           <div className='information--block information--block-right basis-1/3'>
             <div className='information--items'>
               <box-icon name='calendar'></box-icon>
-              <span>Ngày đăng: {post.postedDate}</span>
+              <span>
+                {t('post-details.posted-date')}: {post.postedDate}
+              </span>
             </div>
             <div className='information--items'>
               <box-icon name='mouse-alt'></box-icon>
-              <span>Lượt xem: {post.views}</span>
+              <span>
+                {t('post-details.views')}: {post.views}
+              </span>
             </div>
             <div className='information--items'>
               <box-icon name='message-alt-edit'></box-icon>
-              <span>Lượt đánh giá: {post.reviews}</span>
+              <span>
+                {t('post-details.comments')}: {post.reviews}
+              </span>
             </div>
           </div>
 
           <div className='information--block buttons--container basis-1/6'>
             <button className='information--items information__buttons'>
               <box-icon name='heart' size='sm'></box-icon>
-              <span>Yêu thích</span>
+              <span>{t('post-details.like')}</span>
             </button>
             <button className='information--items information__buttons'>
               <box-icon name='share' size='sm'></box-icon>
-              <span>Chia sẻ</span>
+              <span>{t('post-details.share')}</span>
             </button>
           </div>
         </div>
@@ -365,7 +379,12 @@ export default function PostDetailsPage() {
             <h3 className='text-2xl font-medium mb-1'>
               {t('post-details.general')}
             </h3>
-            <p className='text-xl'>{post.introduction}</p>
+            <p
+              className='text-xl'
+              dangerouslySetInnerHTML={{
+                __html: post.introduction.replace(/\n/g, '<br>'),
+              }}
+            />
           </div>
           <div className='introduction--contact px-2'>
             <h3 className='text-2xl font-medium mb-1'>

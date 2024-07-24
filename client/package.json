@@ -23,8 +23,11 @@
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
     "react-i18next": "^14.1.2",
+    "react-multi-date-picker": "^4.5.2",
+    "react-multi-select-component": "^4.3.4",
     "react-router-dom": "^6.24.1",
     "react-slick": "^0.30.2",
+    "scrollreveal": "^4.0.9",
     "slick-carousel": "^1.8.1",
     "tailwindcss": "^3.4.4"
   },

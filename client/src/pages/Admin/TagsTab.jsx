@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import CreateTagPopup from '../../components/CreateTagPopup';
+
 export default function TagsTab() {
   const tagsList = [
     {
@@ -47,6 +50,13 @@ export default function TagsTab() {
     },
   ];
 
+  const [isCreateTagPopupOpen, setIsCreateTagPopupOpen] = useState(false);
+  const handleOpenCreateTagPopup = () => {
+    setIsCreateTagPopupOpen(true);
+  };
+  const handleCloseCreateTagPopup = () => {
+    setIsCreateTagPopupOpen(false);
+  };
   return (
     <div className='tags-tab'>
       <div className='filters--container flex gap-8 flex-wrap justify-start items-center'>
@@ -77,7 +87,10 @@ export default function TagsTab() {
           </select>
         </div>
 
-        <button className='new-tag__button bg-primary font-bold p-2 rounded-md'>
+        <button
+          className='new-tag__button bg-primary font-bold p-2 rounded-md'
+          onClick={() => handleOpenCreateTagPopup()}
+        >
           Thêm thẻ mới
         </button>
       </div>
@@ -101,6 +114,9 @@ export default function TagsTab() {
           </tbody>
         </table>
       </div>
+      {isCreateTagPopupOpen && (
+        <CreateTagPopup onClose={handleCloseCreateTagPopup} />
+      )}
     </div>
   );
 }

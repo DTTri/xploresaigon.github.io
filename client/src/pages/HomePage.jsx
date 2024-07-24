@@ -10,8 +10,7 @@ export default function HomePage() {
   const postList = [
     {
       id: 1,
-      title:
-        'Landmark 81 sieu sang chanh danh cho gioi thuong luu, phai ghe it nhat 1 lan trong doi',
+      title: 'Landmark 81 -  tòa nhà chọc trời tại Thành phố Hồ Chí Minh',
       address: 'Nguyễn Huệ, Quận 1',
       imageUrl:
         'https://i.pinimg.com/564x/c9/7e/b4/c97eb4364b2f247a03427c9ed3e1a7ba.jpg',
@@ -19,8 +18,7 @@ export default function HomePage() {
     },
     {
       id: 1,
-      title:
-        'Landmark 81 sieu sang chanh danh cho gioi thuong luu, phai ghe it nhat 1 lan trong doi',
+      title: 'Landmark 81 -  tòa nhà chọc trời tại Thành phố Hồ Chí Minh',
       address: 'Nguyễn Huệ, Quận 1',
       imageUrl:
         'https://i.pinimg.com/564x/c9/7e/b4/c97eb4364b2f247a03427c9ed3e1a7ba.jpg',
@@ -28,8 +26,7 @@ export default function HomePage() {
     },
     {
       id: 1,
-      title:
-        'Landmark 81 sieu sang chanh danh cho gioi thuong luu, phai ghe it nhat 1 lan trong doi',
+      title: 'Landmark 81 -  tòa nhà chọc trời tại Thành phố Hồ Chí Minh',
       address: 'Nguyễn Huệ, Quận 1',
       imageUrl:
         'https://i.pinimg.com/564x/c9/7e/b4/c97eb4364b2f247a03427c9ed3e1a7ba.jpg',
@@ -37,8 +34,7 @@ export default function HomePage() {
     },
     {
       id: 1,
-      title:
-        'Landmark 81 sieu sang chanh danh cho gioi thuong luu, phai ghe it nhat 1 lan trong doi',
+      title: 'Landmark 81 -  tòa nhà chọc trời tại Thành phố Hồ Chí Minh',
       address: 'Nguyễn Huệ, Quận 1',
       imageUrl:
         'https://i.pinimg.com/564x/c9/7e/b4/c97eb4364b2f247a03427c9ed3e1a7ba.jpg',
@@ -46,8 +42,7 @@ export default function HomePage() {
     },
     {
       id: 1,
-      title:
-        'Landmark 81 sieu sang chanh danh cho gioi thuong luu, phai ghe it nhat 1 lan trong doi',
+      title: 'Landmark 81 -  tòa nhà chọc trời tại Thành phố Hồ Chí Minh',
       address: 'Nguyễn Huệ, Quận 1',
       imageUrl:
         'https://i.pinimg.com/564x/c9/7e/b4/c97eb4364b2f247a03427c9ed3e1a7ba.jpg',
@@ -55,8 +50,7 @@ export default function HomePage() {
     },
     {
       id: 1,
-      title:
-        'Landmark 81 sieu sang chanh danh cho gioi thuong luu, phai ghe it nhat 1 lan trong doi',
+      title: 'Landmark 81 -  tòa nhà chọc trời tại Thành phố Hồ Chí Minh',
       address: 'Nguyễn Huệ, Quận 1',
       imageUrl:
         'https://i.pinimg.com/564x/c9/7e/b4/c97eb4364b2f247a03427c9ed3e1a7ba.jpg',
@@ -64,8 +58,7 @@ export default function HomePage() {
     },
     {
       id: 1,
-      title:
-        'Landmark 81 sieu sang chanh danh cho gioi thuong luu, phai ghe it nhat 1 lan trong doi',
+      title: 'Landmark 81 -  tòa nhà chọc trời tại Thành phố Hồ Chí Minh',
       address: 'Nguyễn Huệ, Quận 1',
       imageUrl:
         'https://i.pinimg.com/564x/c9/7e/b4/c97eb4364b2f247a03427c9ed3e1a7ba.jpg',
@@ -73,8 +66,7 @@ export default function HomePage() {
     },
     {
       id: 1,
-      title:
-        'Landmark 81 sieu sang chanh danh cho gioi thuong luu, phai ghe it nhat 1 lan trong doi',
+      title: 'Landmark 81 -  tòa nhà chọc trời tại Thành phố Hồ Chí Minh',
       address: 'Nguyễn Huệ, Quận 1',
       imageUrl:
         'https://i.pinimg.com/564x/c9/7e/b4/c97eb4364b2f247a03427c9ed3e1a7ba.jpg',
@@ -82,8 +74,7 @@ export default function HomePage() {
     },
     {
       id: 1,
-      title:
-        'Landmark 81 sieu sang chanh danh cho gioi thuong luu, phai ghe it nhat 1 lan trong doi',
+      title: 'Landmark 81 -  tòa nhà chọc trời tại Thành phố Hồ Chí Minh',
       address: 'Nguyễn Huệ, Quận 1',
       imageUrl:
         'https://i.pinimg.com/564x/c9/7e/b4/c97eb4364b2f247a03427c9ed3e1a7ba.jpg',
@@ -91,8 +82,7 @@ export default function HomePage() {
     },
     {
       id: 1,
-      title:
-        'Landmark 81 sieu sang chanh danh cho gioi thuong luu, phai ghe it nhat 1 lan trong doi',
+      title: 'Landmark 81 -  tòa nhà chọc trời tại Thành phố Hồ Chí Minh',
       address: 'Nguyễn Huệ, Quận 1',
       imageUrl:
         'https://i.pinimg.com/564x/c9/7e/b4/c97eb4364b2f247a03427c9ed3e1a7ba.jpg',
@@ -100,8 +90,7 @@ export default function HomePage() {
     },
     {
       id: 1,
-      title:
-        'Landmark 81 sieu sang chanh danh cho gioi thuong luu, phai ghe it nhat 1 lan trong doi',
+      title: 'Landmark 81 -  tòa nhà chọc trời tại Thành phố Hồ Chí Minh',
       address: 'Nguyễn Huệ, Quận 1',
       imageUrl:
         'https://i.pinimg.com/564x/c9/7e/b4/c97eb4364b2f247a03427c9ed3e1a7ba.jpg',
@@ -109,8 +98,7 @@ export default function HomePage() {
     },
     {
       id: 1,
-      title:
-        'Landmark 81 sieu sang chanh danh cho gioi thuong luu, phai ghe it nhat 1 lan trong doi',
+      title: 'Landmark 81 -  tòa nhà chọc trời tại Thành phố Hồ Chí Minh',
       address: 'Nguyễn Huệ, Quận 1',
       imageUrl:
         'https://i.pinimg.com/564x/c9/7e/b4/c97eb4364b2f247a03427c9ed3e1a7ba.jpg',
@@ -118,8 +106,7 @@ export default function HomePage() {
     },
     {
       id: 1,
-      title:
-        'Landmark 81 sieu sang chanh danh cho gioi thuong luu, phai ghe it nhat 1 lan trong doi',
+      title: 'Landmark 81 -  tòa nhà chọc trời tại Thành phố Hồ Chí Minh',
       address: 'Nguyễn Huệ, Quận 1',
       imageUrl:
         'https://i.pinimg.com/564x/c9/7e/b4/c97eb4364b2f247a03427c9ed3e1a7ba.jpg',
@@ -127,8 +114,7 @@ export default function HomePage() {
     },
     {
       id: 1,
-      title:
-        'Landmark 81 sieu sang chanh danh cho gioi thuong luu, phai ghe it nhat 1 lan trong doi',
+      title: 'Landmark 81 -  tòa nhà chọc trời tại Thành phố Hồ Chí Minh',
       address: 'Nguyễn Huệ, Quận 1',
       imageUrl:
         'https://i.pinimg.com/564x/c9/7e/b4/c97eb4364b2f247a03427c9ed3e1a7ba.jpg',

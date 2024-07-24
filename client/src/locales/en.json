@@ -14,7 +14,11 @@
   "filters": {
     "search": "Search",
     "district": "District",
-    "sort-by": "Sort by",
+    "sort": {
+      "newest": "Newest",
+      "oldest": "Oldest",
+      "hot": "Hot"
+    },
     "other": "Filters"
   },
   "about-us": {
@@ -39,7 +43,12 @@
     "other-posts": "Related places",
     "write-comment": "Write a comment",
     "close": "Close",
-    "submit-comment": "Submit comment"
+    "submit-comment": "Submit comment",
+    "posted-date": "Posted Date",
+    "views": "Views",
+    "comments": "Comments",
+    "like": "Like",
+    "share": "Share"
   },
   "settings": {
     "dark-mode": "Dark mode",

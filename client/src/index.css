@@ -5,6 +5,11 @@
 @layer components {
   .header-nav {
     @apply text-lg font-medium;
+    transition: 0.2s;
+  }
+  .header-nav:hover,
+  .header-nav.active {
+    @apply text-primary;
   }
   .form-container {
     @apply absolute top-0 h-full w-1/2 transition-all duration-300 ease-in-out;
@@ -55,7 +60,7 @@
     }
     .filter-bar {
       .filters {
-        @apply relative flex items-center border border-gray-400 rounded-xl px-2 py-1;
+        @apply relative flex items-center border border-gray-400 rounded-xl px-2 py-1 bg-white dark:bg-secondDarkBackground;
 
         .filters--select {
           @apply outline-none w-full text-center text-lg text-text dark:text-white bg-transparent;
@@ -78,6 +83,10 @@
           span {
             @apply underline min-w-16;
           }
+          @apply px-1 py-1 rounded-md;
+        }
+        .information__buttons:hover {
+          background-color: rgba(32, 178, 171, 0.144);
         }
       }
       .buttons--container {
@@ -183,6 +192,51 @@
           @apply border border-gray-300 border-collapse text-center;
         }
       }
+    }
+  }
+  .create-post-popup,
+  .create-tag-popup {
+    .form--container {
+      .form__item {
+        @apply flex gap-2 justify-start p-2;
+        .form__label {
+          @apply text-lg font-medium min-w-fit pt-2;
+        }
+        .form__input {
+          @apply p-2 w-full border border-gray-400 rounded-md bg-white;
+        }
+      }
+    }
+  }
+  .post-item {
+    transition: transform 0.3s ease;
+  }
+  .post-item:hover {
+    transform: scale(1.02);
+  }
+  button {
+    transition: transform 0.1s ease;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  button:active {
+    opacity: 0.6;
+  }
+  .about-us-page {
+    img {
+      animation: floatImage 2s ease-in-out infinite;
+    }
+  }
+  @keyframes floatImage {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(0.5rem);
+    }
+    100% {
+      transform: translateY(0);
     }
   }
 }

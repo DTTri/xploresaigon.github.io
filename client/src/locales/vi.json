@@ -14,7 +14,11 @@
   "filters": {
     "search": "Tìm kiếm",
     "district": "Quận",
-    "sort-by": "Sắp xếp theo",
+    "sort": {
+      "newest": "Mới nhất",
+      "oldest": "Cũ nhất",
+      "hot": "Nổi bật"
+    },
     "other": "Bộ lọc"
   },
   "about-us": {
@@ -39,7 +43,12 @@
     "other-posts": "Các địa điểm liên quan",
     "write-comment": "Viết bình luận",
     "close": "Đóng",
-    "submit-comment": "Đăng bình luận"
+    "submit-comment": "Đăng bình luận",
+    "posted-date": "Ngày đăng",
+    "views": "Lượt xem",
+    "comments": "Lượt bình luận",
+    "like": "Yêu thích",
+    "share": "Chia sẻ"
   },
   "settings": {
     "dark-mode": "Chế độ tối",

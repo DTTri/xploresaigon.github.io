@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function PostItem({ post }) {
   return (
     <Link to={`/post/${post.id}`} className='post-item'>
-      <div className='gallery__item overflow-hidden dark:text-white'>
+      <div className='gallery__item overflow-hidden bg-white shadow-md dark:text-white dark:bg-secondDarkBackground dark:shadow-sky-950 rounded-xl'>
         <div className='gallery__item--image-wrapper relative w-full overflow-hidden pt-full'>
           <img
             src='/images/about-us/poster-1.jpg'
@@ -12,7 +12,7 @@ export default function PostItem({ post }) {
             className='gallery__item--image absolute top-0 left-0 w-full object-cover rounded-xl'
           />
         </div>
-        <div className='gallery__item--content pt-1 overflow-hidden'>
+        <div className='gallery__item--content pt-1 px-2 pb-2 overflow-hidden'>
           <h3 className='text-lg font-semibold pl-1 line-clamp-2'>
             {post.title}
           </h3>
