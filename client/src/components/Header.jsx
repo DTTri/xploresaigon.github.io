@@ -77,7 +77,7 @@ export default function Header() {
   return (
     <>
       <header className='px-12 py-4 flex justify-between bg-background dark:bg-darkBackground'>
-        <a href=''>XploreSaigon</a>
+        <Link to='/'>XploreSaigon</Link>
 
         <div className='flex gap-10 dark:text-white'>
           <div>
