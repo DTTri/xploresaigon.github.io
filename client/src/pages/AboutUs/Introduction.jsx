@@ -2,7 +2,7 @@ import { useTranslation } from '../../i18n';
 
 export default function Introduction() {
   const { t } = useTranslation();
-
+  // Introduction component
   return (
     <>
       <div className='min-h-[520px] h-screen flex items-center justify-between flex-wrap overflow-hidden dark:text-white'>
